@@ -1,0 +1,25 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "chat.tools.terminal.autoApprove": {
+        "/^C:/Users/I0567922/AppData/Local/anaconda3/python\\.exe -c \"import json,sys; p=r'c:\\\\Users\\\\I0567922\\\\OneDrive - Sanofi\\\\Documents\\\\Knowledge\\\\Neural Nets\\\\nn-zero-to-hero\\\\lectures\\\\exercises\\\\bigrams\\.ipynb'; nb=json\\.load\\(open\\(p,'r',encoding='utf-8'\\)\\); cells=nb\\['cells'\\]; q=sum\\(1 for c in cells if c\\['cell_type'\\]=='markdown' and any\\('Exercise' in s or s\\.strip\\(\\)\\.startswith\\(tuple\\(str\\(i\\)\\+'\\.' for i in range\\(1,10\\)\\)\\) for s in c\\.get\\('source',\\[\\]\\)\\)\\); code=\\[i for i,c in enumerate\\(cells\\) if c\\['cell_type'\\]=='code'\\]; hidden=\\[i for i,c in enumerate\\(cells\\) if c\\['cell_type'\\]=='markdown' and c\\.get\\('metadata',\\{\\}\\)\\.get\\('jupyter',\\{\\}\\)\\.get\\('source_hidden'\\)\\]; nonempty_visible_code=\\[i for i,c in enumerate\\(cells\\) if c\\['cell_type'\\]=='code' and ''\\.join\\(c\\.get\\('source',\\[\\]\\)\\)\\.strip\\(\\)!=''\\]; print\\('nbformat',nb\\.get\\('nbformat'\\)\\); print\\('questions_markdown_detected',q\\); print\\('code_cells',len\\(code\\)\\); print\\('hidden_solution_cells',len\\(hidden\\)\\); print\\('nonempty_visible_code_cells',len\\(nonempty_visible_code\\)\\); assert nb\\.get\\('nbformat'\\)==4; assert q==17, q; assert len\\(code\\)==17, len\\(code\\); assert len\\(hidden\\)==17, len\\(hidden\\); assert len\\(nonempty_visible_code\\)==0, nonempty_visible_code; print\\('VALIDATION_OK'\\)\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+      }
+  },
+  // Disable suggestion popups / completions
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": false
+    },
+        "editor.suggestOnTriggerCharacters": false,
+        "editor.wordBasedSuggestions": "off",
+        "editor.parameterHints.enabled": false,
+        "editor.inlineSuggest.enabled": true,
+
+  // If you use Copilot, disable it only in this workspace
+  "github.copilot.enable": {
+    "*": false
+  }
+}
