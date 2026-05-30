@@ -12,7 +12,8 @@ Given:
 
 Inputs (from the command arguments):
 - `transcript`: required; name of text file in `transcripts` folder that contains the lecture
-- `reference`: required; path to notebook/script file that contains the final implementation that was built in the lecture 
+- `reference`: required; path to notebook/script file that contains the final implementation that was built in the lecture; it can be a directory with multiple files
+- `attention` not required; the user specifies attention points where very elaborate explanations are needed; produce more exercises on this topic without disconsidering the other topics
 
 Output format:
 - A single markdown file with two main sections: `## Questions` and `## Answers`. The name of the file must be the same as transcript but with a `.md` extension, and it should be saved in the `exercises` folder.
